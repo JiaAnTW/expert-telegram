@@ -1,0 +1,40 @@
+.income-word-box,.inner-income-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.income-word-box label{
+    font-size: 20px;
+    /*color:"#393E41";*/
+    color: white;
+}
+
+.income-word-box span{
+    font-size: 17px;
+    color:"#393E41";
+    font-weight: 700;
+}
+
+.income-word-box:first-child{
+    margin-bottom: 10px;
+    /*color: #B1E0D8;*/
+    color:white;
+    background-color: rgb(57, 62, 65);
+}
+
+#total-income{
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+#total-income label{
+    font-size: 25px;
+    color: white;
+}
+
+#total-income span{
+    font-size: 60px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,17 @@
+.stat,.income-box,.control-panel,.control-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-box{
+    flex-direction: column;
+}
+
+.control-panel{
+    justify-content: space-evenly;
+}
+
+.income-box{
+    background-color: rgb(57, 62, 65);
+}
