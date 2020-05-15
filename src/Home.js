@@ -77,9 +77,9 @@ function Home() {
     }
 
     const spawnBtnList=()=>{
-        return btnArr.map((item)=>{
+        return btnArr.map((item,Index)=>{
             return(
-            <div style={conrolBoxStyle}>
+            <div style={conrolBoxStyle} key={Index}>
                 <button style={btnStyle}>
                     <IconContext.Provider value={{ color: "white",size:"1em" }}>
                         <div>
@@ -96,7 +96,7 @@ function Home() {
     return (
     <>
         <div style={layoutStyle}>
-            <Carousel style={CarouselStyle} activeIndex={index} onSelect={handleSelect}>
+            <Carousel style={CarouselStyle} activeIndex={index} onSelect={handleSelect} interval={null} wrap={false}>
                 <Carousel.Item >
                     <div style={cardStyle}>                       
                         <img

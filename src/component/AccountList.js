@@ -29,14 +29,14 @@ function AccountList() {
 
   return (
     <ListGroup>
-        {data.map((element)=>{
+        {data.map((element,index)=>{
             const lightStyle={
-                    height:"100%",
-                    width:"2.5px",
-                    position:"absolute",
-                    top:"0",
-                    left:"0",
-                    backgroundColor:(element.payRev==="pay")?"#F75940":"#3DC7BE"
+                height:"100%",
+                width:"2.5px",
+                position:"absolute",
+                top:"0",
+                left:"0",
+                backgroundColor:(element.payRev==="pay")?"#F75940":"#3DC7BE"
             };
 
             const priceStyle={
@@ -51,7 +51,7 @@ function AccountList() {
             }
 
             return(
-                <ListGroup.Item style={listStyle}>
+                <ListGroup.Item style={listStyle} key={index}>
                     <div style={lightStyle}></div>
                     <div style={{textAlign:"center",width:"50px"}}>
                         <div style={priceStyle}>

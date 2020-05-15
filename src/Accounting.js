@@ -1,9 +1,68 @@
 import React,{useState,useEffect} from 'react';
 import IncomeBox from "./component/IncomeBox.js";
 import "./Accounting.css"
-import {IconContext} from 'react-icons';
+import Icon from './component/Icon.js';
 import { GoPlus,GoGraph } from "react-icons/go";
 import AccountList from "./component/AccountList.js";
+
+function DashboardBtn(){    
+    const btnStyle={
+        position:"absolute",
+        top:"135px",
+        left:"35%",
+        width:"30%",
+        height:"30px",
+        backgroundColor:"rgb(243,243,243)",
+        color:"#393E41",
+        flexDirection:"row",
+        border:"none",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:"100px",
+        border:"1px solid rgba(0,0,0,0.3)"
+    };
+
+    const iconStyle={
+        size:"0.7em",
+        color:"#393E41"
+    };
+    return(
+        <button style={btnStyle}>
+            <Icon component={()=><GoGraph/>} style={iconStyle}/>
+            <span>{"分析報表"}</span>
+        </button>
+    );
+}
+
+function PlusBtn(){    
+    const btnStyle={
+        position:"fixed",
+        top:"550px",
+        right:"20px",
+        backgroundColor:"rgb(57, 62, 65)",
+        width:"70px",
+        height:"70px",
+        color:"white",
+        border:"none",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:"100px",
+        border:"1px solid rgba(0,0,0,0.3)"
+    };
+
+    const iconStyle={
+        size:"1em",
+        color:"white"
+    };
+    return(
+        <button style={btnStyle}>
+            <Icon component={()=><GoPlus/>} style={iconStyle}/>
+        </button>
+    );
+}
+
 
 function Accounting() {
     const containerStyle={
@@ -54,35 +113,17 @@ function Accounting() {
         }}
     ]
 
-    const spawnControlList=()=>{
-        return controlList.map((Element)=>{
-            let tmpStyle=Object.assign({},controlBtnStyle);
-            for(let props in Element["style"]){
-                tmpStyle[props]=Element["style"][props];
-            }
-            return (
-            <div style={tmpStyle}>                    
-                <IconContext.Provider value={{ color: Element.color,size:Element.size }}>
-                    <div style={{display:"flex"}}>
-                        {Element.component}
-                    </div>
-                </IconContext.Provider>
-                <span style={{fontSize:"1px"}}>{Element.name}</span>
-            </div>
-            );
-        })
-    }
-
     return (
         <div style={containerStyle}>
-
+            
             <div className="income-box">
                 <IncomeBox rev={900} pay={400}/>
             </div>
             <div className="accountList" style={{overflowY:"auto"}}>
                 <AccountList/>
             </div>
-            {spawnControlList()}
+            <DashboardBtn/>
+            <PlusBtn/>
         </div>
     )
 }
