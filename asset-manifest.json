@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/invAccountingWeb/static/css/main.64619688.chunk.css",
+    "main.js": "/invAccountingWeb/static/js/main.14cc8f7e.chunk.js",
+    "main.js.map": "/invAccountingWeb/static/js/main.14cc8f7e.chunk.js.map",
+    "runtime-main.js": "/invAccountingWeb/static/js/runtime-main.fa5c900a.js",
+    "runtime-main.js.map": "/invAccountingWeb/static/js/runtime-main.fa5c900a.js.map",
+    "static/css/2.69121389.chunk.css": "/invAccountingWeb/static/css/2.69121389.chunk.css",
+    "static/js/2.c363c883.chunk.js": "/invAccountingWeb/static/js/2.c363c883.chunk.js",
+    "static/js/2.c363c883.chunk.js.map": "/invAccountingWeb/static/js/2.c363c883.chunk.js.map",
+    "index.html": "/invAccountingWeb/index.html",
+    "precache-manifest.a6b3fa76698e76f1998f6b52ea9e6ad8.js": "/invAccountingWeb/precache-manifest.a6b3fa76698e76f1998f6b52ea9e6ad8.js",
+    "service-worker.js": "/invAccountingWeb/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/invAccountingWeb/static/css/2.69121389.chunk.css.map",
+    "static/css/main.64619688.chunk.css.map": "/invAccountingWeb/static/css/main.64619688.chunk.css.map",
+    "static/js/2.c363c883.chunk.js.LICENSE.txt": "/invAccountingWeb/static/js/2.c363c883.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa5c900a.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.c363c883.chunk.js",
+    "static/css/main.64619688.chunk.css",
+    "static/js/main.14cc8f7e.chunk.js"
+  ]
+}
